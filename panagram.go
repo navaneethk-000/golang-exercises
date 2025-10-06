@@ -9,8 +9,8 @@ func Panagram(s string){
 	s = strings.ToLower(s)
 	alphabets := "abcdefghijklmnopqrstuvwxyz"
 
-	for _, ch := range alphabets {
-		if !strings.Contains(s, string(ch)){
+	for i:=0; i<len(alphabets); i++ {
+		if !strings.Contains(s, string(alphabets[i])) {
 			fmt.Println("Not Panagram")
 			return
 		}
