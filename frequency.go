@@ -6,8 +6,8 @@ import (
 
 func Frequency(s string) {
 
-	frequency := make(map[string]int)
 	s = strings.ToLower(s)
+	frequency := make(map[string]int)
 
 	for i:=0; i<len(s); i++ {
 		ch := string(s[i])

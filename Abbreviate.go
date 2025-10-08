@@ -1,24 +1,26 @@
 package main
+
 import (
 	"fmt"
 	"strings"
 	"unicode"
-	)
+)
 
-func Abbrevate(s string){
+func Abbreviate(s string) string {
 	words := strings.Fields(s)
 	shortform := ""
 
 	for _, word := range words {
 		firstChar := rune(word[0])
 
-		if unicode.IsUpper(firstChar){
+		if unicode.IsUpper(firstChar) {
 			shortform += string(firstChar)
-		}	
+		}
 	}
-	fmt.Println(shortform)
+	return shortform
 }
 
 func main() {
-	Abbrevate("College of Engineering Trivandrum")
+	result := Abbreviate("College of Engineering Trivandrum")
+	fmt.Println(result)
 }
