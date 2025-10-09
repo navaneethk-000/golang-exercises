@@ -3,5 +3,7 @@
 # But keep .go files
 !*.go
 !*.out
+!*.mod
+!*.yml
 # Also keep .gitignore itself
 !.gitignore
