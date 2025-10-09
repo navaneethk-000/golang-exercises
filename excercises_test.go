@@ -58,7 +58,7 @@ func TestFrequency(t *testing.T) {
 		t.Errorf("Expected %v but got %v", expected, result)
 	}
 
-	result = Frequency("Nooon")
+	result = Frequency("Noon")
 	expected = map[string]int{
 		"N": 1,
 		"o": 2,
