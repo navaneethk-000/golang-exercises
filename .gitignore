@@ -4,6 +4,7 @@
 !*.go
 !*.out
 !*.mod
-!*.yml
+.github/
+!.github/workflows/go-tests.yml
 # Also keep .gitignore itself
 !.gitignore
