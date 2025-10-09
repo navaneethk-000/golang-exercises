@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func Frequency(s string) map[string]int {
 
 	frequency := make(map[string]int)
@@ -14,9 +10,4 @@ func Frequency(s string) map[string]int {
 	}
 
 	return frequency
-}
-
-func main() {
-	result := Frequency("Are you sad?")
-	fmt.Println(result)
 }

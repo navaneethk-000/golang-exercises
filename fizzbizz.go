@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -20,8 +19,4 @@ func Fizzbiz(n int) []string {
 		}
 	}
 	return output
-}
-
-func main() {
-	fmt.Println(Fizzbiz(20))
 }

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -15,11 +14,4 @@ func Pangram(s string) bool {
 		}
 	}
 	return true
-}
-
-func main() {
-
-	sentence := "The quick brown fox jumps over the lazy dog"
-	fmt.Println(Pangram(sentence))
-
 }
